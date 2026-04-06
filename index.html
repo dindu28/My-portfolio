@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8d5e4d6acc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <a href="#" class="logo">Okereke <span>Chidindu</span></a>
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <section id="home">
+      <div class="main-text">
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Chidindu</span></h1>
+        </div>
+        <div class="header-body">
+          <div class="image">
+            <img src="background.png" class="profile-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="about.png" class="about-img" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                I'm a Frontend Developer and I'm passionate about designing
+                clean, responsive, and user-friendly websites. My growing
+                interest in UI/UX Design drives me to create digital experiences
+                that are both visually appealing and intuitive. Beyond web
+                development, I'm also developing my skills in Python and
+                exploring the exciting world of Artificial Intelligence. I
+                believe that the future of technology lies in the intersection
+                of design, software development, and AI innovation, and I aspire
+                to contribute to solutions that make everyday life easier and
+                smarter. I enjoy learning, experimenting with new tools, and
+                challenging myself with projects that push me outside my comfort
+                zone. With a mindset of growth, adaptability, and creativity, I
+                am committed to building solutions that not only meet user needs
+                but also inspire better interactions with technology.
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Frontend Developement</span><br />Building responsive
+                    and interactive web interfaces
+                  </li>
+                  <li>
+                    <span>Responsive Design</span><br />Designing web pages that
+                    work on any device
+                  </li>
+                  <li><span>UI Design</span><br />Designing web interfaces</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2025 - Present</span><br />Built responsive and
+                    interactive web interfaces using HTML, CSS, and JavaScript
+                  </li>
+                  <li>
+                    <span>2025 - Present</span><br />Developed websites that
+                    adapt seamlessly to mobile, tablet, and desktop screens
+                  </li>
+                  <li>
+                    <span>2024 - Present</span><br />Experimented with
+                    animations, transitions, and interactive elements to improve
+                    user experience.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2022 - 2025</span><br />Computer Technology at Babcock
+                    University
+                  </li>
+                  <li>
+                    <span>2025</span><br />Legacy Responsive Web Design V8 from
+                    freeCodeCamp
+                  </li>
+                  <li><span>2025</span><br />AI for Beginners from HP LIFE</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Frontend Developement</h2>
+              <p>
+                I build responsive, interactive web interfaces using HTML, CSS,
+                and JavaScript.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-layer-group"></i>
+              <h2>UI Design</h2>
+              <p>I design clean and user-friendly web interfaces.</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-laptop-code"></i>
+              <h2>Responsive Design</h2>
+              <p>
+                I build layouts that adapt seamlessly to mobile, tablet, and
+                desktop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="work1.png" />
+              <div class="layer">
+                <h3>Travel Website</h3>
+                <p>
+                  A modern travel platform designed to inspire exploration and
+                  simplify trip planning. The website showcases curated
+                  destinations, immersive visuals, and user-friendly navigation
+                  to help travelers discover and plan memorable experiences with
+                  ease.
+                </p>
+                <div class="btn-group">
+                  <div class="btn">
+                    <a
+                      href="https://dindu28.github.io/Travel-website/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                  <div class="btn">
+                    <a
+                      href="https://github.com/dindu28/Travel-website"
+                      target="_blank"
+                      >Github Repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <img src="work2.png" />
+              <div class="layer">
+                <h3>Hospital Website</h3>
+                <p>
+                  A healthcare website designed to provide patients with easy
+                  access to services, information, and appointment booking. The
+                  site focuses on clarity, trustworthiness, and user-friendly
+                  navigation to ensure a smooth experience for all visitors.
+                </p>
+                <div class="btn-group">
+                  <div class="btn">
+                    <a
+                      href="https://dindu28.github.io/Hospital-website/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                  <div class="btn">
+                    <a
+                      href="https://github.com/dindu28/Hospital-website"
+                      target="_blank"
+                      >Github Repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <img src="work3.png" />
+              <div class="layer">
+                <h3>Meal Planner Website</h3>
+                <p>
+                  A meal planning platform designed to help users create
+                  balanced, personalized meal plans effortlessly. The website
+                  emphasizes clarity, organization, and intuitive navigation to
+                  make healthy eating simple and enjoyable.
+                </p>
+                <div class="btn-group">
+                  <div class="btn">
+                    <a
+                      href="https://dindu28.github.io/Meal-planner/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                  <div class="btn">
+                    <a
+                      href="https://github.com/dindu28/Meal-planner"
+                      target="_blank"
+                      >Github Repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <img src="work4.png" />
+              <div class="layer">
+                <h3>Style Assistant</h3>
+                <p>
+                  StyleMate is a digital wardrobe assistant that allows users to
+                  organize their clothing, generate outfit combinations for
+                  different occasions, and mix & match styles through an
+                  interactive interface. It is built with HTML, CSS, and vanilla
+                  JavaScript, focusing on a modern, responsive design and smooth
+                  user experience.
+                </p>
+                <div class="btn-group">
+                  <div class="btn">
+                    <a
+                      href="https://dindu28.github.io/Style-assistant/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                  <div class="btn">
+                    <a
+                      href="https://github.com/dindu28/Style-assistant"
+                      target="_blank"
+                      >Github Repo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i> bettychidindu@gmail.com
+              </p>
+              <p><i class="fa-solid fa-square-phone"></i> 08144188155</p>
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/chidindu-okereke-67944a2b7"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/dindu28" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="Contact Form">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; All Rights Reserved | Okereke Chidindu</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
